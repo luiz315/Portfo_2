@@ -59,8 +59,10 @@ DATABASES = {
 }
 
 # Arquivos estáticos - Vercel
+# Arquivos estáticos - Vercel
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR.parent / 'staticfiles_build' / 'static'
+STATICFILES_DIRS = [BASE_DIR / 'static']
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
