@@ -4,7 +4,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Hosts permitidos na Vercel
-ALLOWED_HOSTS = ['.vercel.app', '.now.sh', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['.vercel.app', '.now.sh', '127.0.0.1', 'localhost']
 # ou libere temporariamente para teste:
 # ALLOWED_HOSTS = ['*']
 
@@ -22,13 +22,8 @@ MIDDLEWARE = [
 
 # Arquivos estáticos
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-# Se você tem pasta static/ no projeto:
-# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-
-# WhiteNoise - compressão e cache
+STATIC_ROOT = BASE_DIR / 'staticfiles_build' / 'static'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
 # Para Django 4.2+ use STORAGES (recomendado):
 # STORAGES = {
 #     "staticfiles": {
