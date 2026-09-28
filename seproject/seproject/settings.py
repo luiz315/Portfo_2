@@ -31,7 +31,7 @@ MIDDLEWARE = [
 # Arquivos estáticos
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR.parent / 'staticfiles_build' / 'static'
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 # Para Django 4.2+ use STORAGES (recomendado):
 # STORAGES = {
 #     "staticfiles": {
