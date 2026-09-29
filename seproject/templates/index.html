@@ -1,4 +1,4 @@
-
+{% load static %}
 
 <!DOCTYPE html>
 <!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
@@ -9,8 +9,17 @@
    ================================================== -->
    <meta charset="utf-8">
 	<title>Portfolio Luiz</title>
-	<meta name="description" content="">  
-	<meta name="author" content="">
+	<meta name="description" content="Portfólio de Luiz Victor Reis - Analista de Dados. Projetos em Python, Django e análise de dados.">
+	<meta name="author" content="Luiz Victor Reis">
+	<link rel="canonical" href="https://portfo-2.vercel.app/">
+
+	<!-- Open Graph / LinkedIn / WhatsApp -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://portfo-2.vercel.app/">
+	<meta property="og:title" content="Portfólio Luiz | Analista de Dados">
+	<meta property="og:description" content="Projetos em Python, Django e Análise de Dados.">
+	<meta property="og:image" content="{% static 'images/intro-bg.jpg' %}">
+	<meta name="twitter:card" content="summary_large_image">
 
    <!-- mobile specific metas
    ================================================== -->
@@ -29,7 +38,7 @@
 
    <!-- favicons
 	================================================== -->
-	<link rel="icon" type="image/ico" href="../static/images/luiz_noel.ico">
+	<link rel="icon" type="image/x-icon" href="{% static 'images/luiz_noel.ico' %}">
 
 </head>
 
@@ -127,7 +136,7 @@
    		<div class="col-six tab-full">
 
    			<h3>Perfil</h3>
-   			<p>Proativo,Esforçado,Comunicativo</p>
+   			<p>Proativo, esforçado e comunicativo.</p>
 
    			<ul class="info-list">
    				<li>
@@ -159,7 +168,7 @@
    		<div class="col-six tab-full">
 
    			<h3>Habilidades</h3>
-   			<p>Durante essa minha trajetoria na programção e na área de análise de dados utilizei inumeras "ferramentas" para conseguir superar os desafios algumas delas  não aparecerão abaixo mas vale citar, utilizei    </p>
+   			<p>Durante minha trajetória na programação e na área de análise de dados, utilizei inúmeras ferramentas para superar desafios. Algumas delas não aparecerão abaixo, mas vale citar:</p>
 
 				<ul class="skill-bars">
 				   <li>
@@ -172,7 +181,7 @@
 				   </li>
 				   <li>
 				   	<div class="progress percent45"><span>45%</span></div>
-				   	<strong>Tableu</strong>
+				   	<strong>Tableau</strong>
 				   </li>
 				   <li>
 				   	<div class="progress percent95"><span>95%</span></div>
@@ -210,7 +219,7 @@
    			<h5>Curriculo</h5>
    			<h1>Vivências Profissionais.</h1>
 
-   			<p class="lead">Nesta secção iremos passar sobre minhas experiêcias Profissionais e acadêmicas.  </p>
+   			<p class="lead">Nesta seção, falarei sobre minhas experiências profissionais e acadêmicas.</p>
 
    		</div>   		
    	</div> <!-- /section-intro--> 
@@ -240,7 +249,7 @@
 
 	   				<div class="timeline-content">
 	   					<h4>Universidade Paulista - Unip</h4>
-	   					<p>O curso superior de Tecnologia em Análise e Desenvolvimento de Sistemas da UNIP tem o objetivo de capacitar o aluno a projetar, documentar, especificar, implementar, testar, implantar e manter sistemas computacionais de informação.</p>
+	   					<p>O curso superior de Tecnologia em Análise e Desenvolvimento de Sistemas da UNIP tem como objetivo capacitar o aluno a projetar, documentar, especificar, implementar, testar, implantar e manter sistemas computacionais de informação.</p>
 	   				</div>
 
 	   			</div> <!-- /timeline-block -->
@@ -278,7 +287,7 @@
 
 	   				<div class="timeline-content">
 	   					<h4>Escola Municipal Maria Pereira Braga</h4>
-	   					<p> Ministrar aulas sobre informatica basica e seus conceitos,manutenção de computadores impressoras e correlatos, Edição revisão e impressão de provas Escolares. </p>
+	   					<p>Ministrei aulas sobre informática básica e seus conceitos, manutenção de computadores, impressoras e correlatos, além de edição, revisão e impressão de provas escolares.</p>
 	   				</div>
 
 	   			</div> <!-- /timeline-block -->
@@ -304,7 +313,7 @@
 		   <h5>Projetos</h5>
 		   <h1>Confira abaixo alguns projetos.</h1>
 
-		   <p class="lead">Bom Chegamos na seção mais divertida, desafiadora e empolgante do site, a parte de Projetos.</p>
+		   <p class="lead">Chegamos à seção mais divertida, desafiadora e empolgante do site: a de Projetos.</p>
 
 	   </div>   		
    </div> <!-- /section-intro--> 
@@ -563,7 +572,7 @@
    			<h5>Certificados</h5>
    			<h1>Confira abaixo meus certificados</h1>
 
-   			<p class="lead">Abaixo Reuni meus Certificados e Certificações.</p>
+   			<p class="lead">Abaixo, reuni meus certificados e certificações.</p>
 
    		</div>   		
    	</div> <!-- /section-intro--> 
@@ -1276,7 +1285,7 @@
 
 	            	 <h3>SQL</h3>
 
-		            <p class="desc"> Uma habilidade muito importante é saber trabalhar com banco de dados e suas querys. 
+		            <p class="desc"> Uma habilidade muito importante é saber trabalhar com banco de dados e suas queries.
 	         		</p>
 	         		
 	         	</div> 	         	 
@@ -1291,7 +1300,7 @@
 
 	            	<h3>Análise de Dados</h3>  
 
-		            <p class="desc"> Análises de Dados claras e estilizadas utilizando ferramentas como Power BI, Tableu e "R".
+		            <p class="desc"> Análises de dados claras e estilizadas utilizando ferramentas como Power BI, Tableau e R.
 	         		</p>
 
 	            </div>	                          
@@ -1306,7 +1315,7 @@
 
 	            	<h3>Limpeza de Dados</h3>
 
-		            <p class="desc"> Formatar, transformar e limpar dados são habilidades essenciais para profissionais da área.
+		            <p class="desc"> Formatar, transformar e limpar dados são habilidades essenciais para os profissionais da área.
 	        			</p> 
 
 	            </div> 	            	               
@@ -1335,7 +1344,7 @@
    			<h5>Contato</h5>
    			<h1>Entre em Contato</h1>
 
-   			<p class="lead">Sinta-se a vontande para fazer um comentario, deixar uma sugestão ou entrar em contato, ficarei muito grato com seu Feedback.</p>
+   			<p class="lead">Sinta-se à vontade para fazer um comentário, deixar uma sugestão ou entrar em contato. Ficarei muito grato com seu feedback.</p>
 
    		</div> 
    	</div> <!-- /section-intro -->
